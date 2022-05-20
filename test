@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Billets parc disneyland</title>
+        <meta charset="utf-8" />
+                <style type ='text/css'>
+                    fieldset{
+                        margin-right: 1100px;
+                    }
+
+
+                   </style> 
+
+    </head>
+    <body>
+        <fieldset>
+            <h1>Billets Parc Disneyland Paris </h1>
+
+            <table border="1">
+                
+                    <td colspan="2" align="center"> 
+                 
+                        <h3> 
+                        Réservation DisneyLand Paris   
+                     </h3>
+                
+                    </td>    
+                
+        <tr>
+            <td>Nom</td>
+            <td><input type="text" name="nom"></td>
+        </tr>
+        <tr>
+            <td>Téléphone</td>
+        <td><input type="text" name="tel"></td>
+        </tr>
+        <tr>
+            <td>Nombre de jours de visite</td>
+         <td>
+ <input type="radio" name="choix" value="1">1 jour<br>
+ <input type="radio" name="choix" value="2">2 jours<br>
+ <input type="radio" name="choix" value="3">3 jours<br>
+ <input type="radio" name="choix" value="4">4 jours<br>
+
+</td>        </tr>
+        <tr>
+         <td>Date d'arrivée</td>
+               <td><input type="Date" name="arrivee"> <br /></td>
+    </tr>
+        <tr>
+            <td> Date de départ<td>
+           <input type="Date" name="depart">
+        </tr>
+        <tr>
+            <td>Nombre de billets adultes</td>
+            <td><input type="text" name="adultes"></td>
+        </tr>
+         <tr>
+            <td>Nombre de billets enfants</td>
+            <td><input type="text" name="enfants"></td>
+        </tr>
+         <tr>
+            <td>Type d'hébergement</td>
+                    <td>
+ <input type="radio" name="choix" value="1">Economique <br>
+ <input type="radio" name="choix" value="2">Affaire<br>
+
+</td>
+        </tr>
+         <tr>
+            <td>Petit-déjeuner</td>
+            <td> <input type="radio" name="dej" value="3">Avec petit-dejeuner<br>
+ <input type="radio" name="dej" value="4">Sans petit-dejeuner<br></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="Ajouter au panier"></td>
+            </td>
+        </tr>
+            </table>
+        </form>
+        </fieldset>
+    </body>
+</html>
