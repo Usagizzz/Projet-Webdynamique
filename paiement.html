@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+             <title>Paiement</title>
+          <!-- <script type="text/javascript" src="paiement.js"> </script> pas encore créer-->
+            <link rel="stylesheet" type="text/css" href="paiement.css">
+          <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+    <div class="titre">
+        <div class="text">
+            <h1 >OMNES SANTE : PAIEMENT</h1>
+        </div>
+    </div> 
+
+
+    <div class="row">
+        <div>
+            <div class="carte ">
+                <div class="carte_header">
+                    <div class="type_carte">
+                     
+                        <ul role="tablist" class="listecarte">
+                            <li class="nav-item"> <a data-toggle="pill" href="#visa" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Visa </a> </li>
+
+                            <li class="nav-item"> <a data-toggle="pill" href="#mastercard" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> MasterCard </a> </li>
+
+
+                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+
+                            <li class="nav-item"> <a data-toggle="pill" href="#americanexpress" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> American Express </a> </li>
+                        </ul>
+                    </div> 
+
+
+                 
+                    <div class="tab-content">
+                        <!--Infos-->
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                            <form role="form" onsubmit="event.preventDefault()">
+
+                                <div class="form-group"> <label for="username">
+                                        <h5>Propriétaire de la carte</h5>
+                                    </label> <input type="text" name="username" placeholder="Propriétaire de la carte" required class="form-control "> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h5>Numéro de carte</h5>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="N° de carte " class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label> <span class="hidden-xs">
+                                                    <h5>Date d'expiration</h5>
+                                                </span> </label>
+                                            <div class="input-group"> 
+                                                <input type="number" placeholder="MM"  class="form-control" required>
+                                             <input type="number" placeholder="AA"  class="form-control" required> </div>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <div> <label data-toggle="tooltip" >
+                                                <h5>Code de sécurité </h5>
+                                            </label> <input type="text" required class="form-control"> </div>
+                                    </div>
+                                </div>
+                                <div class="confirmation"> <button type="button" > Confirmation de paiement </button>
+                            </form>
+                        </div>
+                    </div> 
+             
+                
+                   
+                    <div id="testjcombobox">
+                        <div class="form-group "> <label for="Choisir votre banque">
+                                <h5>Choisir votre banque</h5>
+                            </label> 
+
+                            <select class="form-control"> 
+                                <option value="" selected disabled>--Banques--</option>
+                                <option>ECE</option>
+                                <option>HSBC</option>
+                                <option>La Banque Postale</option>
+                                <option>Crédit Agricole</option>
+                                <option>LCL</option>
+                                <option>Caisse d'épargne</option>
+                                <option>BRED</option>
+                                <option>BNP PARIBAS</option>
+                                <option>Société générale</option>
+                                <option>J'ai faim</option>
+                            </select> </div>
+
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
