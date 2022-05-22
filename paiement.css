@@ -1,5 +1,21 @@
 body{
-background: whitesmoke;
+     background:linear-gradient(whitesmoke, skyblue);
+     height: 700px;
+
+}
+.row{
+    background-color: black;
+      width: 600px;
+    background-color: lightblue;
+    margin-right: 460px;
+    margin-left: 460px;
+
+}
+.paie{
+    background-color: whitesmoke;
+    border-radius: 50px;
+    height: 550px;
+ 
 }
 .type_carte{
     text-align: center;
@@ -7,7 +23,7 @@ background: whitesmoke;
     width: 550px;
     height: 50px;
     margin: 20px;
-    background-color: ghostwhite;
+    background-color: lightsteelblue;
     border-radius: 10px;
 }
 .type_carte ul li{
@@ -28,17 +44,10 @@ background: whitesmoke;
     font-weight: 400;
 
 }
-.type_carte ul li:hover a .icone{
-    transform: translateY(-35px);
+.type_carte ul li:hover a {
+    transform: translateY(-25px);
 }
-.type_carte ul li a .icone {
-    position: relative;
-    display: block;
-    line-height: 15px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-}
+
 .type_carte ul li a .txt{
     position: absolute;
     color: black;
