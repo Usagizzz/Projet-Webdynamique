@@ -1,0 +1,144 @@
+body {    
+     background:linear-gradient(to left top, whitesmoke, lightblue);
+     font-family: Arial, Helvetica, sans-serif; 
+}
+
+button{
+    background: none;
+    border-color: blur;
+}
+
+h4{
+    text-align: center;
+    color: dimgray;
+
+} 
+
+form{
+    padding: 40px;
+    text-align: right;
+}
+/*////////////////////////////////////*/
+.header{
+
+}
+
+/*////////////////////////////////////*/
+
+.contenu_principal{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+/*////////////////////////////////////*/
+.navigation{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    width: 1500px;
+    height: 100px;
+    margin: 20px;
+    background-color: ghostwhite;
+   /* background-image: linear-gradient(to bottom, rgba(100,20,128,0.5),rgba(255,128,255,0.5));;*/
+    border-radius: 10px;
+}
+.navigation ul li{
+   
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+     float: left;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+
+}
+.navigation ul li:hover a .icone{
+    transform: translateY(-35px);
+}
+.navigation ul li a .icone {
+    position: relative;
+    display: block;
+    line-height: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+.navigation ul li a .txt{
+    position: absolute;
+    color: black;
+    font-weight: 0.85em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navigation ul li:hover a .txt{
+    opacity: 1;
+   
+} 
+/*////////////////////////////////////*/
+
+.gestionrdv ul li{
+   
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+     float: left;
+}
+
+.gestionrdv ul li:hover{
+    transform: translateX(50px);
+}
+/*////////////////////////////////////*/
+
+.caroussel{
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+ }
+.images{
+       display: flex;
+       flex:  auto;
+       animation-duration: 20s;
+       animation-name: Panel;
+       animation-iteration-count: infinite ;
+
+}
+@keyframes Panel{
+  0%{
+       transform: translateX(0px);
+
+  }
+  25%{
+      transform: translateX(-400px);   
+  }
+  50%{
+       transform: translateX(-800px) ;
+  }
+  75%{
+        transform:translateX(-1200px) ;
+  }
+  100%{
+          transform: translateX(0px);
+  }
+
+}
+/*////////////////////////////////////*/
+#footer { font-size: .60em;
+ font-style: italic; 
+ }
