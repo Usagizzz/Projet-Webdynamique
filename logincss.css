@@ -2,7 +2,7 @@
 body{
 	
 	overflow: hidden;
-	background:linear-gradient(#e66465, #9198e5);
+	background:linear-gradient(to left top, whitesmoke, lightblue);
 	height: 900px;
 	
 
@@ -27,7 +27,7 @@ table{
 	width: 500px;
 	height: 500px;
 	align-items: center;
-	color: whitesmoke;
+	color: dimgrey;
 	background-color: blur;
 }
 .inputbox{
