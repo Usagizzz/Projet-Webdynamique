@@ -2,36 +2,54 @@
 <html>
 	<head>
     		 <title>Accueil</title>
-             <link rel="stylesheet" type="text/css" href="projetpiscine.css">
+             <link rel="stylesheet" type="text/css" href="accueilcss.css">
              <meta charset="utf-8" />
     </head>
     <body>
+
+      <div id="wrapper">
+
+        <div class="header" id="entete">
+
+
+        </div>
+
         
-        <div class="header">
+        <div class="navigation" id="nav">
             <ul>
                 <li> <a href="accueil.html">  
                     <span class="icone">
                 <img src="home.png" alt="Home" height="40" width="40"> </span>
-                 <span class="txt">Accueil </span>  </a>         </li>  
-                <li> <a href="login.html"> 
+                 <span class="txt">Accueil </span>  </a>         </li> 
+
+                 <li> <a href="accueil.html">  
+                    <span class="icone">
+                <img src="parcourir.png" alt="parcourir" height="40" width="40"> </span>
+                 <span class="txt">Tout parcourir </span>  </a>         </li> 
+
+                   <li> <a href="login.html"> 
                     <span class="icone">
                 <img src="authen.png" alt="Authentification" height="40" width="40">   </span>
-                <span class="txt">Authentification </span>  </a></li> 
-                    &nbsp;&nbsp;&nbsp;
-                 <li>
-                    <a href="mdp.html"> 
-                        <span class="icone">
-                            <img src="settings.png" alt="Paramètres" height="40" width="40"></span>
-                        <span class="txt">Paramètres </span>  </a>
-                </li> 
+                <span class="txt">Recherche </span>  </a></li> 
+          
+                  <li> <a href="login.html"> 
+                    <span class="icone">
+                <img src="calendar.png" alt="Authentification" height="40" width="40">   </span>
+                <span class="txt">Rendez-vous </span>  </a></li> 
+          
+                  <li> <a href="login.html"> 
+                    <span class="icone">
+                <img src="motde.png" alt="Authentification" height="40" width="40">   </span>
+                <span class="txt">Votre compte </span>  </a></li> 
+           
                 <form> 
                     <input type="search" name="search" placeholder="Recherche">
                 </form>
             </ul>
                
-            </div>
+            </div><!--fin navigation-->
          
-     <div class="caroussel">
+    <!-- <div class="caroussel">
                 <div class="images">
                      <img src="inosuke.gif" alt="Inosuke"  width="260">
                      <img src="netflix.jpg" alt="Séries Netflix" width="260">
@@ -41,15 +59,23 @@
                      <img src="squidgame.jpeg" alt ="Squid Game"width="260">
                      <img src="naruto.gif" alt ="Naruto" width="260">
                 </div>
-    </div> 
-    <div class="contenu_principal">
-        <p>Netflix & chill</p>
-    </div> 
+    </div> -->
 
-            <div id="footer">Copyright &copy; 2021 Prime Properties<br>
- <a href="mailto:prime.properties@gmail.com">prime.properties@gmail.com</a>
- </div>
+    <div class="gestionrdv">
+        <center>
+            <ul>
         
+            <li> <h4>Prendre un rendez-vous</h4>
+            <a href="rdv.html"> <button type="button"> <img src="rdvfond.png" name="fondrdv" alt="image_sympa" height="200" width="240"></button> </a> </li>
+        
+      
+           <li> <h4>Historique des consultations</h4>
+            <button type="button"> </button> </li>
+          </ul>
+       </center>
+    </div> <!--fin gestionrdv-->
+
+    </div> <!--fin wrapper-->              
     </body>
 
 </html>    
