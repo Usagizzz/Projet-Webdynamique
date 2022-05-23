@@ -3,11 +3,6 @@ body {
      font-family: Arial, Helvetica, sans-serif; 
 }
 
-button{
-    background: none;
-    border-color: blur;
-}
-
 h4{
     text-align: center;
     color: dimgray;
@@ -18,28 +13,42 @@ form{
     padding: 40px;
     text-align: right;
 }
-/*////////////////////////////////////*/
+/*/////////////HEADER///////////////////////*/
 .header{
-
 }
-
-/*////////////////////////////////////*/
-
-.contenu_principal{
-    position: relative;
-    width: 280px;
-    height: 280px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+/*//////////////ID NAV//////////////////////*/
+#nav .connexion form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-/*////////////////////////////////////*/
+#nav .connexion input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+#nav .connexion input:hover{
+    border-bottom: 2px solid salmon;
+}
+#nav .connexion button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+#nav .connexion button:hover{
+    border-bottom: 2px solid salmon;
+}
+/*//////////////CLASS NAVIGATION//////////////////////*/
 .navigation{
     text-align: right;
     font-family: 'Poppins', sans-serif;
@@ -91,7 +100,25 @@ form{
     opacity: 1;
    
 } 
+/*///////////////CONTENU PRINCIPAL/////////////////////*/
+
+.contenu_principal{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
 /*////////////////////////////////////*/
+
+/*///////////GESTION RDV/////////////////////////*/
 
 .gestionrdv ul li{
    
@@ -104,7 +131,7 @@ form{
 .gestionrdv ul li:hover{
     transform: translateX(50px);
 }
-/*////////////////////////////////////*/
+/*////////////////CAROUSSEL ET ANIMATIONS////////////////////*/
 
 .caroussel{
     display: flex;
@@ -138,7 +165,7 @@ form{
   }
 
 }
-/*////////////////////////////////////*/
+/*////////////FOOTER////////////////////////*/
 #footer { font-size: .60em;
  font-style: italic; 
  }

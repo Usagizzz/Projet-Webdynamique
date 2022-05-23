@@ -106,7 +106,6 @@ fieldset{
     transition: 0.5s;
     opacity: 0;
 }
-.type_carte ul li:hover a .txt{
-    opacity: 1;
-   
-} 
+.type_carte ul li a: :before{
+}    
+
