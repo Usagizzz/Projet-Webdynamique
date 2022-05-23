@@ -1,15 +1,61 @@
 body{
      background:linear-gradient(whitesmoke, skyblue);
-     height: 700px;
+     height: 715px;
+}
+h1{
+    color: dimgray;
+}
+legend{
+    color: dimgray;
+}
+h3{
+    color: linen;
+    background-color: blur;
+}
+fieldset{
+    background-color: blur;
+}
+.contenu{
+    width: 1000px;
+    background-color: lightblue;
+    margin-left: 280px;
+    border-radius: 15px;
 
 }
-.row{
-    background-color: black;
-      width: 600px;
-    background-color: lightblue;
-    margin-right: 460px;
-    margin-left: 460px;
-
+#credit-card .infosbanque input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+#credit-card .infosbanque select{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+#credit-card .infosbanque button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+#credit-card .infosbanque table{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 100px;
 }
 .paie{
     background-color: whitesmoke;
@@ -21,9 +67,9 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     width: 550px;
-    height: 50px;
+    height: 90px;
     margin: 20px;
-    background-color: lightsteelblue;
+    background-color: blur;
     border-radius: 10px;
 }
 .type_carte ul li{
@@ -39,9 +85,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 85px;
+    height: 40px;
     text-align: center;
     font-weight: 400;
+    background-color: whitesmoke;
+    border-radius: 25%;
+    color: cornflowerblue;
 
 }
 .type_carte ul li:hover a {
