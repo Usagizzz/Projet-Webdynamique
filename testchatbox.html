@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+             <title>TestChatbox</title>
+             <link rel="stylesheet" type="text/css" href="testchatcss.css">
+             <link rel="stylesheet" type="text/css" href="accueilcss.css">
+             <meta charset="utf-8" />
+    </head>
+    <body>
+
+
+        <div class="header" id="entete">
+            <center> <img src="omnes.png"> </center>
+
+
+        </div>
+
+        
+        <div id="nav" class="navigation">
+            <ul>
+                <li> <a href="accueil.html">  
+                    <span class="icone">
+                <img src="home.png" alt="Home" height="40" width="40"> </span>
+                 <span class="txt">Accueil </span>  </a>         </li> 
+
+                 <li> <a href="accueil.html">  
+                    <span class="icone">
+                <img src="parcourir.png" alt="parcourir" height="40" width="40"> </span>
+                 <span class="txt">Tout parcourir </span>  </a>         </li> 
+
+                   <li> <a href="login.html"> 
+                    <span class="icone">
+                <img src="authen.png" alt="Authentification" height="40" width="40">   </span>
+                <span class="txt">Recherche </span>  </a></li> 
+          
+                  <li> <a href="login.html"> 
+                    <span class="icone">
+                <img src="calendar.png" alt="Authentification" height="40" width="40">   </span>
+                <span class="txt">Rendez-vous </span>  </a></li> 
+          
+                  <li> <a href="login.html"> 
+                    <span class="icone">
+                <img src="motde.png" alt="Authentification" height="40" width="40">   </span>
+                <span class="txt">Votre compte </span>  </a></li> 
+           
+                <form class="connexion"> 
+                    <input type="text" name="nomuser" placeholder="Nom d'utilisateur">
+                    <input type="password" name="mdpuser" placeholder="Mot de passe">
+                    <button>Connexion</button>
+                   <!-- <input type="search" name="search" placeholder="Recherche">-->
+                </form>
+            </ul>
+               
+            </div><!--fin navigation-->
+
+             <div class="gestionrdv">
+        <center>
+            <ul>
+        
+            <li> <h4>Prendre un rendez-vous</h4>
+            <a href="rdv.html"> <button type="button"> <img src="rdvfond.png" name="fondrdv" alt="image_sympa" height="200" width="240"></button> </a> </li>
+        
+      
+           <li> <h4>Historique des consultations</h4>
+            <button type="button"> </button> </li>
+          </ul>
+       </center>
+    </div> <!--fin gestionrdv-->
+         
+
+      <div class="chat-bar-collapsible">
+            <button id="chat-button" class="collapsible" type="button"> Contactez-nous</button>
+            <div class="content">
+                <div class="full-chat-block">
+                    <div class="outer">
+                        <div class="chat-container">
+                            <div id=chatbox>
+                                <h5 id="timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Chargement ...</span></p>
+                            </div><!--fin chatbox-->
+
+                           <div class="chat-bar">
+                            <div id="userInput">
+                                <input type="text" name="msg" id="textInput" clas="inputt-box" placeholder="Appuyer Entrer pour envoyer un message">
+                                <p>
+                                </p>
+
+                            </div><!--fin userInput-->
+                           </div> <!--fin chatbar-->
+                           <div id="chat-bar-bottom">
+                                <p></p>
+
+                           </div>
+                         </div><!--fin chat-container-->
+                    </div><!--fin outer-->
+                </div><!--fin full chat block-->
+
+            </div>
+
+        </div>
+
+</body>
+</html>
+    
