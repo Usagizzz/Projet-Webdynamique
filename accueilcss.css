@@ -1,5 +1,6 @@
 body {    
      background:linear-gradient(to left top, whitesmoke, lightblue);
+     scroll-behavior: smooth;
 }
 h4{
     text-align: center;
@@ -12,7 +13,17 @@ form{
 }*/
 
 /*/////////////HEADER///////////////////////*/
-.header{
+header{
+    color: whitesmoke;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+header h1{
+    font-size: 90px;
 }
 /*//////////////ID NAV//////////////////////*/
 #nav .connexion form{
