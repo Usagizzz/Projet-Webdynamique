@@ -186,7 +186,7 @@ header h1{
         
       
            <td> <h3>Historique des consultations</h3>
-            <a href=""> <button type="button"> <img src="historique.png" height="200" width="200"> </button> </a> </td>
+            <a href=""> <button type="button"> <img src="historique.png" height="200" alt="historique" width="200"> </button> </a> </td>
           </tr>
    
     </div> <!--fin gestionrdv-->
