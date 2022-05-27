@@ -21,7 +21,7 @@
 	<h2>Dr. Dubois</h2>
 <img src="mg1.png" alt = "boswel" height = "120" width = "120" >
 <input type="submit" name="button1" value="Voir ses informations">
-<input type="submit" name="button2" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="submit" name="button2" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button3" value="Contacter">
 
 <h2>Dr. Delahaye</h2>

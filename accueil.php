@@ -35,6 +35,7 @@
         font-size: 2em;
         color: dimgray;
 }
+
 .gestionrdv ul li{
    
     list-style: none;
@@ -57,6 +58,9 @@
 .gestionrdv ul li:hover{
     transform: translateX(25px);
 }
+    body{
+      background:linear-gradient(to left top, whitesmoke, mintcream);
+    }
 
     iframe{
       height: 100%;
@@ -67,6 +71,14 @@
       background-color: #555;
       color: white;
       padding: 15px;
+    }
+    button{
+        outline: none;
+        border: none;
+    }
+    button:hover{
+        border-bottom: 2px solid salmon;
+        border-radius: 5px;
     }
     header{
     color: dimgray;
@@ -97,7 +109,7 @@ header h1{
         <p><a href="#">Notre équipe</a></p>
         <p>
           <span class="label label-default">Justine BOUDOUX</span>
-          <span class="label label-primary">Minh-Bao Potier</span>
+          <span class="label label-primary">Minh-Bao POTIER</span>
           <span class="label label-success">Thibaud PERRET</span>
           <span class="label label-info">Clarence MAGNE</span>
         </p>
@@ -122,7 +134,7 @@ header h1{
     
         <!--Interactions clients-->
     <div class="gestionrdv">
-
+            <table>
             <tr>
         
             <td> <h3>Prendre un rendez-vous</h3>
@@ -131,7 +143,11 @@ header h1{
       
            <td> <h3>Historique des consultations</h3>
             <a href="historiquerdv.php"> <button type="button"> <img src="historique.png" height="200" width="200"> </button> </a> </td>
+
+             <td> <h3>Consulter les services payants</h3>
+            <a href="servicepayant.php"> <button type="button"> <img src="paiement.png" height="200" width="200"> </button> </a> </td>
           </tr>
+      </table>
    
     </div> <!--fin gestionrdv-->
     
