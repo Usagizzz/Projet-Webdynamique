@@ -61,6 +61,10 @@
       height: 100%;
       width: 100%;
     }
+    body{
+        background-color: whitesmoke;
+    }
+
 
     footer {
       background-color: #555;
@@ -82,67 +86,9 @@ header h1{
 }
   </style>
 </head>
-<body>
-   <header>
-        <h1>OMNES SANTE</h1>
-        <h3><em>Pour une humanité plus saine</em></h3>
-      </header>
+<?php include('entete.php'); ?>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="accueil.html">Accueil</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="rdv.html">Rendez-vous </a></li>
-        <li><a href="specialiste.html">Tout parcourir</a></li>
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group input-group">
-          <input type="text" class="form-control" placeholder="Search..">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </span>        
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Votre compte</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!--A propos-->
-    <section id="apropos">
-        <div class="contient">
-            <div class="gauche">
-            <h3><em>&nbsp;&nbsp;A propos</em></h3>
-            <div>
-                   <p> &nbsp;&nbsp;&nbsp; Institué en 2022, OMNES SANTE  représente la branche centrale du domaine médicale du groupe OMNES. Ce site innovant regroupe une liste de tous les personnels de OMNES SANTE, de sélectionner un spécialiste préféré, de voir ses informations pertinentes, tels que son CV, ses coordonnées, et son calendrier de la semaine ainsi que sa disponibilité pour recevoir un rendez-vous.</p> 
-                   <p>&nbsp;&nbsp;&nbsp;Quand un rendez-vous avec ce spécialiste est fait, le client reçoit une confirmation de ce rendez-vous. Omnes Santé est ouvert à tous les membres de la communauté Omnes Education</p> 
-            </div><!--fin paragraphes-->
-            </div><!--fin gauche-->
-            <div class="droite">
-                <h3><em>&nbsp;&nbsp;Nos valeurs</em></h3>
-                <div>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engagement numéro 1 : Faciliter l’accès aux soins pour tous</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engagement numéro 2 :  Pratiquer les soins sans but lucratif </p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engagement numéro 3 :  Assurer des soins de qualité</p>
 
-                </div>
-
-            </div>
-        </div><!--fin contient-->
-
-    </section>
-  
 <div class="container text-center">    
   <div class="row">
     <div class="col-sm-3 well">
@@ -182,11 +128,11 @@ header h1{
             <tr>
         
             <td> <h3>Prendre un rendez-vous</h3>
-            <a href="rdv.html"> <button type="button"> <img src="rdvfond.png" name="fondrdv" alt="image_sympa" height="200" width="200"></button> </a> </td>
+            <a href="rdv.php"> <button type="button"> <img src="rdvfond.png" name="fondrdv" alt="image_sympa" height="200" width="200"></button> </a> </td>
         
       
            <td> <h3>Historique des consultations</h3>
-            <a href=""> <button type="button"> <img src="historique.png" height="200" alt="historique" width="200"> </button> </a> </td>
+            <a href="historiquerdv.php"> <button type="button"> <img src="historique.png" height="200" width="200"> </button> </a> </td>
           </tr>
    
     </div> <!--fin gestionrdv-->
