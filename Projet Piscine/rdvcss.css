@@ -1,0 +1,240 @@
+
+body{
+	background:linear-gradient(to left top, whitesmoke, lightblue);
+
+}
+ hr{
+ 	background:linear-gradient(#e66465, #9198e5);
+ 	height:2px;
+ 	margin:0px;
+ 	border-radius: 5px;
+ }
+/*/////////////id nav///////////////////////*/
+#nav .connexion form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#nav .connexion input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+#nav .connexion input:hover{
+    border-bottom: 2px solid salmon;
+}
+#nav .connexion button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+#nav .connexion button:hover{
+    border-bottom: 2px solid salmon;
+}
+/*//////////////CLASS NAVIGATION//////////////////////*/
+.navigation{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    width: 1500px;
+    height: 100px;
+    margin: 20px;
+    background-color: ghostwhite;
+   /* background-image: linear-gradient(to bottom, rgba(100,20,128,0.5),rgba(255,128,255,0.5));;*/
+    border-radius: 10px;
+}
+.navigation ul li{
+   
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+     float: left;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+
+}
+.navigation ul li:hover a .icone{
+    transform: translateY(-35px);
+}
+.navigation ul li a .icone {
+    position: relative;
+    display: block;
+    line-height: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+.navigation ul li a .txt{
+    position: absolute;
+    color: black;
+    font-weight: 0.85em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navigation ul li:hover a .txt{
+    opacity: 1;
+   
+} 
+
+
+/*/////////////id appointment///////////////////////*/
+/*
+ #appointment{
+ 	background-color: ghostwhite;
+ 	padding: 50px 0;
+ }*/
+
+ #appointment .contenu{
+ 	max-width: 1100px;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	flex-direction: row-reverse;
+ 	background-color: ghostwhite;
+ 	height: 540px;
+ 	padding: 10px;
+ 	border-radius: 15px;
+ }
+
+#appointment .contenu .formrdv{
+	width: 50%;
+	margin-right: 35px;
+}
+
+#appointment .contenu .formrdv h3 {
+	font-size: 2em;
+	color: dimgrey;
+	margin-bottom: 50px;
+}
+
+#appointment .contenu .formrdv form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#appointment .contenu .formrdv input{
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid cornflowerblue;
+	transition: 0.25s;
+	border-radius: 10px;
+}
+
+#appointment .contenu .formrdv input:hover{
+	border-bottom: 2px solid salmon;
+}
+
+#appointment .contenu .formrdv button.soumettre{
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	outline: none;
+	background-color: white;
+	border-bottom: 2px solid cornflowerblue;
+	transition: 0.25s;
+	border-radius: 10px;
+}	
+
+#appointment .contenu .formrdv select{
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid cornflowerblue;
+	transition: 0.25s;
+	border-radius: 10px;
+}
+
+#appointment .contenu .rdvimage{
+	width: 40%;
+	background-color: blur;
+	height: 100%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+#appointment .contenu .rdvimage img{
+	width: 100%;
+}	
+
+.navigation{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    width: 1500px;
+    height: 100px;
+    margin: 20px;
+    background-color: ghostwhite;
+   /* background-image: linear-gradient(to bottom, rgba(100,20,128,0.5),rgba(255,128,255,0.5));;*/
+    border-radius: 10px;
+}
+.navigation ul li{
+   
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+     float: left;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+
+}
+.navigation ul li:hover a .icone{
+    transform: translateY(-35px);
+}
+.navigation ul li a .icone {
+    position: relative;
+    display: block;
+    line-height: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+.navigation ul li a .txt{
+    position: absolute;
+    color: black;
+    font-weight: 0.85em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navigation ul li:hover a .txt{
+    opacity: 1;
+   
+} 
+
+.inputbox{
+	height: 20px;
+	width: 280px;
+	color: dimgrey;
+	margin-left: 10px;
+}
+

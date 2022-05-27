@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-    		 <title>Votre compte</title>
-    		<!-- <script type="text/javascript" src="loginform.js"> </script>-->
-    		<link rel="stylesheet" type="text/css" href="logincss.css">
-   		  <meta charset="utf-8" />
-    </head>
+<?php include('entete.php'); ?>
+
 
     <body>
     	<center>

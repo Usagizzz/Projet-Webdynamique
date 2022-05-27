@@ -1,7 +1,10 @@
+
+ <link rel="stylesheet" href="historiquerdv.css">
+
 <?php
 echo "<meta charset=\"utf-8\">";
 
-$database = "consultation"; //nom bdd
+$database = "projetweb"; //nom bdd
 //connexion a la bdd
 $db_handle = mysqli_connect('localhost', 'root', '');
 $db_found = mysqli_select_db($db_handle, $database);
@@ -18,24 +21,8 @@ $sql = ""; //variable pour les requetes
 if ($db_found) {
 
 switch ($choice) {
-		case 1:
-			$sql = "DELETE FROM `unioneuropeenne` WHERE `ID`=25"; //cas BREXIT
-			break;
-		case 2: //question b
-		$sql = "SELECT DISTINCT `Pays` FROM `unioneuropeenne` WHERE `DateAdhesion`=1957";
-		break;
-		case 3: //question c
-		$sql = "SELECT * FROM `unioneuropeenne` ORDER BY `Superficie`ASC"; 
-		break;
-		case 4://question d
-			$sql = "SELECT * FROM `unioneuropeenne` ORDER BY `PIB`DESC";
-		break;
-		case 5://question e
-		
-		
-		
 		default:
-			$sql = "SELECT * FROM  `medecin`"; 
+			$sql = "SELECT * FROM  `reservation`"; 
 			break;
 }
 echo "<h1> <center>Historique de vos réservations </center></h1>";
@@ -48,27 +35,27 @@ $result = mysqli_query($db_handle, $sql);
 echo "<table border=\"1\">";
 echo "<tr>";
 echo "<th>" . "ID" . "</th>";
-echo "<th>" . "Nom" . "</th>";
-echo "<th>" . "Prenom" . "</th>";
-echo "<th>" . "Specialite" . "</th>";
-echo "<th>" . "Salle" . "</th>";
+echo "<th>" . "Nom médecin" . "</th>";
+echo "<th>" . "Spécialité" . "</th>";
+echo "<th>" . "Nom patient" . "</th>";
+echo "<th>" . "Prénom patient" . "</th>";
 echo "<th>" . "Mail" . "</th>";
-echo "<th>" . "Telephone" . "</th>";
-echo "<th>" . "Photo" . "</th>";
-echo "<th>" . "CV" . "</th>";
+echo "<th>" . "Date" . "</th>";
+echo "<th>" . "Lieu" . "</th>";
+echo "<th>" . "Heure" . "</th>";
 echo "</tr>";
 
 while ($data = mysqli_fetch_assoc($result)) {
 		echo "<tr>";
-		echo "<td>" . $data['ID'] . "</td>";
-		echo "<td>" . $data['Nom'] . "</td>";
-		echo "<td>" . $data['Prenom'] . "</td>";
-		echo "<td>" . $data['Specialite'] . "</td>";
-		echo "<td>" . $data['Salle'] . "</td>";
-		echo "<td>" . $data['Mail'] . "</td>";
-		echo "<td>" . $data['Telephone'] . "</td>";
-		echo "<td>" . $data['Photo'] . "</td>";
-		echo "<td>" . $data['CV'] . "</td>";
+		echo "<td>" . $data['idreservation'] . "</td>";
+		echo "<td>" . $data['docnom'] . "</td>";
+		echo "<td>" . $data['docspecialite'] . "</td>";
+		echo "<td>" . $data['nompatient'] . "</td>";
+		echo "<td>" . $data['prenompatient'] . "</td>";
+		echo "<td>" . $data['email'] . "</td>";
+		echo "<td>" . $data['date'] . "</td>";
+		echo "<td>" . $data['lieu'] . "</td>";
+		echo "<td>" . $data['heure'] . "</td>";
 		echo "</tr>";
 }
 echo "</table>";

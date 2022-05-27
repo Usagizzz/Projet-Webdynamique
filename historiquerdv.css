@@ -1,0 +1,27 @@
+h1 {
+width: 650px;
+margin: auto;
+text-align: center;
+color: white;
+background-color: #85e0ff;
+padding: 20px;
+margin: 0 auto 20px auto;
+border-radius: 5px;
+}
+p {
+margin-left: 22%;
+}
+table {
+width: 680px;
+margin: auto;
+}
+th {
+background-color: #6699CC;
+}
+td {
+background-color: #0094c7;
+}
+tr:hover {
+opacity: 0.5;
+}
+-

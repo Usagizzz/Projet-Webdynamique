@@ -1,91 +1,40 @@
-<!DOCTYPE html>
-<html>
-	<head>
-    		 <title>Votre compte</title>
-
-    		<link rel="stylesheet" type="text/css" href="logincss.css">
-   		  <meta charset="utf-8" />
-    </head>
-
-    <body>
-    	<center>
-  
-	<div class="container" >
-		<tr>
-		<td align="center" valign="middle">
-						<div class="loginform">
-		<table>
-<!--titre-->
-		<tr>
-		        <td align="center">	<h2>Authentification</h2> </td>
-		</tr> 
-
-<!--ligne de separation de page-->
-		<tr> <td> <hr/> </td>  </tr>
-<!-- fin ligne de separation de page-->
-		
-		<div id="informations">
-
-		<tr> <td> <b>Nom:</b></td></tr>
-
-		<tr> <td> <input type="text" placeholder ="Entrer votre nom" class="inputbox" id="nom"/> </td> </tr>
-
-		<tr> <td> <b>Prénom:</b></td></tr>
-
-		<tr> <td> <input type="text" placeholder="Entrer votre prénom" class="inputbox" id="prenom"/> </td> </tr>
-
-		<tr> <td> <b>Adresse:</b></td></tr>
-
-		<tr> <td> <input type="text" placeholder="Entrer votre adresse" class="inputbox" id="adresse"/> </td> </tr>
-
-		<tr> <td> <b>Carte vitale:</b></td></tr>
-
-		<tr> <td> <input type="number" placeholder="Indiquer votre numéro de carte vitale" class="inputbox" id="carte_vitale"/> </td> </tr>
-
-		<tr> <td> <b>Courriel:</b></td></tr>
-
-		<tr> <td> <input type="text" placeholder="Ecrire votre adresse mail" class="inputbox" id="courriel"/> </td> </tr>
+<?php session_start();  ?>
+<?php include('entete.php'); ?>
 
 
-	   <tr> <td> <b>Mot de passe:</b></td></tr>
 
-		<tr> <td>	<input type="password" placeholder="Choisir un mot de passe" class="inputbox" id="mdp" /> </td> </tr>
+
+
+	<!-- this is for donor registraton -->
+	<div class="login" style="background-color:whitesmoke;">
+		<h3 class="text-center" style="background-color:#272327;color:whitesmoke;">Connexion patient</h3>
+			<div class="formstyle" style="float: right;padding:20px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color:#f3f3f8;color:#141313;">
+				<form action="login_patient.php" method="post" class="text-center form-group">
+					<label>
+						 <input type="email" name="email"  placeholder="Entrer votre adresse e-mail " required>
+					</label><br><br>
+					<label>
+						 <input type="password" name="mdp"  placeholder="Saisir votre mot de passe" required>
+					</label><br><br>
+					<button name="connexion" type="submit" style="margin-left: -26px;width: 85px;border-radius: 3px;">Connexion</button> <br>
+
+					<span style="color:#000;">Vous n'êtes pas encore membre ?</span> <a href="enregistrement_patient.php" title="create a account" target="" style="color:#000;">&nbsp;S'enregistrer</a> <br>
+
+
+				</form> <br>&nbsp;&nbsp;&nbsp;
+				
+				<br>
 
 	</div>
+	
+	
+</div>
+	
+	
+	</div>
 
-		<tr> <td align="center"><br /> <a class="btn-normal" href="accueil.html"> Se connecter </a> 	</td> </tr>
+	<script src="js/bootstrap.min.js"></script>
 
-		<tr> <td align="left"> <br /> <a href ="mdp.html"> <span class="forgetpassword">Mot de passe oublié ?</span></a> </td> </tr>
-		<tr> <td align="left"> <br /> <a href ="loginmedecin.php"> <span class="already">Déjà membre ?</span></a> </td> </tr>
-
-<!--ligne de separation de page-->
-		<tr> <td> <hr/> </td> </tr>
-<!-- fin ligne de separation de page-->
-
-		<tr> <td align="center">Se connecter avec </td> </tr>
-
-
-		<div class="boutons">
-		<tr> 
-			<td> 
-				<center>
-
-			   <button class="btn-normal-logo"> <span> <img src="fb.png" align="center" width="34px" height="34px"/>FACEBOOK</span></button>
-			   &nbsp;&nbsp;&nbsp;&nbsp;
-				 <button class="btn-normal-logo"><span><img src="gmail.png" align ="center" width="34px" height="34px"/>GMAIL</span></button> 
-				 </center>
-		     </td>
-		 </tr>
-		</div>
-
-				</table>
-				</div> <!--div du loginform-->
-						</td>
-							</tr>
-							
-										</div><!--div du container-->
-										</center>
-									
-									  			 
 </body>
 </html>
+

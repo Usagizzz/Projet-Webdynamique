@@ -15,24 +15,26 @@
         	<div class="contenu">
         		<div class="formrdv">
         			<h3>Prendre un rendez-vous</h3>
-        			<form action="@" method="post">
-        				<span> <input type="text" name="name" placeholder="Nom de famille"> </span>
+        			<form action="priserdv.php" method="post">
+                        <input type="text" name="docnom" placeholder="Nom du médecin">
+                        <input type="text" name="docspecialite" placeholder="Spécialité du médecin">
+        				<span> <input type="text" name="nompatient" placeholder="Nom de famille"> </span>
 
-        				<span> <input type="text" class="nom" name="surname" placeholder="Prénom"> </span>
-        				<input type="text" name="mail" class="mail" placeholder="Adresse e-mail">
-        				<input type="time" name="name" class="heure" placeholder="Heure de rendez-vous">
-        				<input type="date" name="name" class="date" placeholder="Date de rendez-vous">
-        			    <select class="form-control"> 
+        				<span> <input type="text" class="nom" name="prenompatient" placeholder="Prénom"> </span>
+        				<input type="text" name="email" class="mail" placeholder="Adresse e-mail">
+                        <input type="date" name="date" class="date" placeholder="Date de rendez-vous">
+
+        				    				
+        			    <select name="lieu" class="form-control"> 
                                 <option selected disabled>--Choisissez un lieu--</option>
-                                <option>ECE</option>
                                 <option>Paris</option>
                                 <option>Lyon</option>
                                 <option>Bordeaux</option>
                                 <option>Toulouse</option>
-                                <option>Nantes</option>
-                                <option>Île de Ré</option>
-                        </select> 
-                       <button class="soumettre"><b>Soumettre</b></button>
+                         </select> 
+                         <input type="time" name="heure" class="heure" placeholder="Heure de rendez-vous">
+
+                       <button name="soumettre" type="submit" class="soumettre"><b>Soumettre</b></button>
                                 				        				
         			</form>	
   				</div> <!--fin formulaire rendez-vous-->	

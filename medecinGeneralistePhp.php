@@ -3,7 +3,7 @@ echo "<meta charset=\"utf-8\">";
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">";
 
 //identifier votre BDD
-$database = "consultationmedicale";
+$database = "projetweb";
 //identifier votre serveur (localhost), utlisateur (root), mot de passe ("")
 $db_handle = mysqli_connect('localhost', 'root', '');
 $db_found = mysqli_select_db($db_handle, $database);

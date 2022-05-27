@@ -57,15 +57,12 @@
 .gestionrdv ul li:hover{
     transform: translateX(25px);
 }
+
     iframe{
       height: 100%;
       width: 100%;
     }
-    body{
-        background-color: whitesmoke;
-    }
-
-
+ 
     footer {
       background-color: #555;
       color: white;
@@ -80,7 +77,7 @@
     align-items: center;
     background:linear-gradient(to left top, whitesmoke, lightblue);
 
-}
+   }
 header h1{
     font-size: 90px;
 }
@@ -88,6 +85,7 @@ header h1{
 </head>
 <?php include('entete.php'); ?>
 
+<body>
 
 <div class="container text-center">    
   <div class="row">
@@ -138,13 +136,15 @@ header h1{
     </div> <!--fin gestionrdv-->
     
      </div>
+ </div>
+
 </div>
 
-<footer class="container-fluid text-center">
-  <p><em>Nous contacter :</em></p>
-  <p>Tel: +33 01 02 03 04 05</p>
-  <p>Courriel : administration@omnessante.fr</p>
-</footer>
+     <footer class="container-fluid text-center">
+              <p><em>Nous contacter :</em></p>
+              <p>Tel: +33 01 02 03 04 05</p>
+              <p>Courriel : administration@omnessante.fr</p>
+   </footer>
 
 </body>
 </html>

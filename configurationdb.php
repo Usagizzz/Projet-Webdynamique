@@ -1,12 +1,12 @@
 						<?php	
 							$serveur = "localhost";
 							$username = "root";
-							$mdp = "";
+							$dbmdp = "";
 							$dbname = "projetweb";
 
 							// Create connection
-							$conn = new mysqli($serveur, $username, $mdp, $dbname);
-							echo("yes");
+							
+							$conn = mysqli_connect('localhost', 'root', '',$dbname);
 							// Check connection
 							if ($conn->connect_error) {
 							    die("Connection failed: " . $conn->connect_error);

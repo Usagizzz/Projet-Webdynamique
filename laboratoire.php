@@ -26,7 +26,7 @@ Téléphone : 01 88 75 61 34<br>
 
 
 <br>
-<button onclick="window.location.href = 'service.html';">Voir nos services</button> <br>
+<button onclick="window.location.href = 'service.php';">Voir nos services</button> <br>
 
 
 </body>
