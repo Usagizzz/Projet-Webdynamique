@@ -1,0 +1,9 @@
+<!ELEMENT cv(specialite, formations+, experience+)>
+<!ELEMENT specialite(#PCDATA)>
+<!ELEMENT formations(debutFormation,finFormation)>
+<!ELEMENT debutFormation(#PCDATA)>
+<!ELEMENT finFormation(#PCDATA)>
+<!ELEMENT experience (debutExperience, finExperience, entreprise)>
+<!ELEMENT debutExperience(#PCDATA)>
+<!ELEMENT finExperience(#PCDATA)>
+<!ELEMENT entreprise(#PCDATA)>
