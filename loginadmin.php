@@ -10,9 +10,8 @@ $database="projet webdynamique";
 $db_handle = mysqli_connect('localhost:3307', 'root', '');
 
 $db_found = mysqli_select_db($db_handle, $database);
-echo "dbfound=1<br>";
+
 if (isset($_POST["button1"])){
-	echo "connecter";
 	if($db_found)
 	{
 	
@@ -27,7 +26,7 @@ if (isset($_POST["button1"])){
 			}
 			else
 			{
-		//echo "<a href='http:/loginadmin.php?nom=$nom&prenom=$module&courriel=$courriel&mdp=$mdp'>Se connecter</a>" ;
+		  echo "<script>location.replace('admin.php');</script>" ;
 
 			}
 		}
