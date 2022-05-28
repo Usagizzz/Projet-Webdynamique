@@ -12,7 +12,7 @@
                 echo $sql;
                 $result = mysqli_query($db_handle, $sql);
                 
-
+                echo "<script>alert('Suppression réussie');</script>";
                 echo "<script>location.replace('admin.php');</script>";
 
 
