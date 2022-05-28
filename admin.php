@@ -15,24 +15,22 @@
         </div>
     <div id="nav" class="navigation">
             <ul>
-                <li> <a href="localhost:8080/inscriptionmedecin.php">  
+                <li> <a href="inscriptionmedecin.php">  
                     
-                 Ajout médecin   </a>         </li> 
+                 Ajout médecin   </a></li> 
 
-                 <li> <a href="suppressionmedecin.php"> 
+                 <li> <a href="suppressionmedecin.php">  
                    
-                 Suppression médecin   </a>         </li> 
+                Suppression médecin   </a></li> 
 
                    <li> <a href="login.html"> 
-                    
+
                 Fichiers xml   </a></li> 
           
-                  <li> <a href="login.html"> 
-                    
+                  <li> <a href="Disponibilitemedecin.php"> 
 
                 Vérification disponibilité  </a></li> 
-          
-                  
+
                 </form>
             </ul>
                
