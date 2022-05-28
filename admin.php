@@ -19,7 +19,7 @@
                     
                  Ajout médecin   </a>         </li> 
 
-                 <li> <a href="accueil.html">  
+                 <li> <a href="suppressionmedecin.php"> 
                    
                  Suppression médecin   </a>         </li> 
 
