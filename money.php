@@ -19,6 +19,7 @@
                 padding: 25px;
                 border-radius: 10px;
                 margin: 25px auto 0;
+                margin-left: 0;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
                 text-align: center;
                 justify-content: center;
@@ -34,6 +35,31 @@
                 border: 1px dashed lightcyan;
             }
             .wrapper legend{
+                padding-bottom: 5px;
+                color: darkcyan;
+             }
+             .wrapper2{
+                background-color: whitesmoke;
+                width: 500px;
+                padding: 25px;
+                border-radius: 10px;
+                margin: 25px auto 0;
+                margin-left: 0;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                justify-content: center;
+                display: block;
+
+            }
+            .wrapper2 h2{
+                background-color: white;
+                color: darkcyan;
+                font-size: 24px;
+                padding: 10px;
+                margin-bottom: 8px;
+                border: 1px dashed lightcyan;
+            }
+            .wrapper2 legend{
                 padding-bottom: 5px;
                 color: darkcyan;
              }
@@ -61,6 +87,8 @@
             .input_box input:hover{
                      border-bottom: 2px solid salmon;
                             }
+          
+              
             button{
                     margin: 10px 0;
                     padding: 10px;
@@ -69,6 +97,7 @@
                     border-bottom: 2px solid cornflowerblue;
                     transition: 0.25s;
                     border-radius: 10px;
+
             }   
            button:hover{
                      border-bottom: 2px solid salmon;
@@ -76,11 +105,11 @@
             </style>
     </head> 
     <body>
+         <form action="gestionpaiement.php" method="post">
         <div class="wrapper">
             <h2>Paiement</h2>
-            <form action="gestionpaiement.php" method="post">
-                <table>
-                <!--Informations personnels clients-->
+           
+                         <!--Informations personnels clients-->
           
                 <fieldset>
                     <legend>Vos informations personnels</legend>
@@ -114,11 +143,17 @@
                         <input type="number" name="cartev" placeholder="Votre carte vitale" required> 
                     </div>
                 </div>
+          
             </fieldset>
                 <!--fin informations personnels clients-->
-                <!--Informations bancaires clients-->
-                <fieldset>
+                 
+                              
+         
+        </div>   <!--fin wrapper-->
+        <div class="wrapper2">
+               <fieldset>
                     <legend>Vos informations bancaires </legend>
+                 
                 <div class="input_group">
  <!--type carte-->    <div class="input_box">
                             <input type="radio" name="typecarte" id="visa" class="radio" checked >
@@ -140,21 +175,23 @@
                         <input type="text" name="nomcarte" placeholder="Nom sur la carte" required> 
                     </div>
                      <div class="input_box">
-                        <input type="month" name="expiration" required> 
+                        <input type="date" name="expiration" required> 
                     </div>
                      <div class="input_box">
                         <input type="number" name="code" placeholder="Digit de sécurité" required> 
                     </div>
 
                 </div>
+                 <button name="proceder" type="submit" >Procéder au paiement</button> <br>
+
             </fieldset>
 
                 <!--fin informations bancaires clients-->
-            </table>
-                <button name="proceder" type="submit" >Procéder au paiement</button> <br>
-                
-            </form>
-        </div>   <!--fin wrapper-->
+
+
+        </div>
+        
+           </form>
 
 
     </body>

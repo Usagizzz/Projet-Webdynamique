@@ -31,7 +31,7 @@
 						if(isset($_POST['proceder'])){ //si on clique sur le bouton name='proceder'
 
 						
-     					$sql = "INSERT INTO `paiement`(`nom`, `prenom`, `al1`, `al2`, `ville`, `codepostal``pays`,`telephone`,`cartev`,`typecarte`,`numcarte`,`nomcarte`,`expiration`,`code`) VALUES ('$nom','$prenom','$al1','$al2','$ville','$codepostal','$pays','$telephone','$cartev','$typecarte','$numcarte','$nomcarte','$expiration','$code');"; //tu fais ta requete
+     					$sql = "INSERT INTO `paiement`(`nom`, `prenom`, `al1`, `al2`, `ville`, `codepostal`,`pays`,`telephone`,`cartev`,`typecarte`,`numcarte`,`nomcarte`,`expiration`,`code`) VALUES ('$nom','$prenom','$al1','$al2','$ville','$codepostal','$pays','$telephone','$cartev','$typecarte','$numcarte','$nomcarte','$expiration','$code');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
 
      					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
@@ -39,7 +39,6 @@
 							} else {
 							    echo "<script>alert('Il y a eu une erreur')<script>" . $sql . "<br>" . $conn->error;
 							}
-
 
 							
 							//fermer la connexion
