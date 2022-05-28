@@ -16,7 +16,8 @@
                 //regarder s'il y a des resultats
                 if (mysqli_num_rows($result) == 0) 
                 {
-                echo "Erreur<br>";
+                echo "<script>alert('Médecin introuvable');</script>";
+                echo "<script>location.replace('admin.php');</script>";
                 }
                 else
                 {
