@@ -1,6 +1,6 @@
 <?php
 						   
-							$database = 'projet webdynamique';
+							$database = 'projetweb';
 
 							// Etablir la connexion
 							$nom = $_POST['nom'];
@@ -15,21 +15,24 @@
 							// Check connection
 							if ($conn->connect_error) {
 							    die("Connection failed: " . $conn->connect_error);
-							    echo "erreur: pas de connexion<br>";
+							    echo "<script>alert('Erreur: base injoignable')</script>";
+		echo "<script>location.replace('loginadmin.html');</script>" ;
 							}					
 						
 						if(isset($_POST['submit'])){ //si on clique sur le bouton name='submit'
 
-						//isset($_POST['submit'])==FALSE;
+						isset($_POST['submit'])==FALSE;
      					$sql = "INSERT INTO `medecin`(nom, prenom, specialite,salle,mail,telephone,photo,cv ) VALUES ('$nom','$prenom','$specialite','$salle','$email','$telephone','$photo','$cv');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
      					
      					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
      						
-     							echo "<script>alert('Enregistrement réussi');</script>";
-							    echo "<script>location.replace('admin.php');</script>"; //location.replace ('nom de la page de redirection ' )
+     							//echo "enregistrement réussi<br>";
+     						echo "<script>alert('Enregistrement réussi');</script>";
+							    echo "<script>location.replace('admin.php');</script>"; //location.replace ('nom de la page de redirection )
 							} else {
-							    echo "erreur" ;
+							    echo "<script>alert('Enregistrement raté');</script>";
+								echo "<script>location.replace('inscriptionmedecin.php');</script>";
 							}
 
 
