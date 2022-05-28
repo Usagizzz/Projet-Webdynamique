@@ -5,7 +5,7 @@ $nom=isset($_POST["nom"])?$_POST["nom"]:"";
 $prenom=isset($_POST["prenom"])?$_POST["prenom"]:"";
 $courriel=isset($_POST["courriel"])?$_POST["courriel"]:"";
 $mdp=isset($_POST["mdp"])?$_POST["mdp"]:"";
-$database="projet webdynamique";
+$database="projetweb";
 
 $db_handle = mysqli_connect('localhost:3307', 'root', '');
 
@@ -18,30 +18,29 @@ if (isset($_POST["button1"])){
 		if ($nom!="")
 		{
 			$sql="SELECT * from admin where nom = '{$nom}' and prenom ='{$prenom}' and courriel ='{$courriel}'and mdp ='{$mdp}'";
-			echo $sql;
+			
 			$result=mysqli_query($db_handle,$sql);
 			if(mysqli_num_rows($result) == 0)
 			{
-			echo "Erreur:requête vide.<br>";
+			 echo "<script>alert('Erreur')</script>";
+			 echo "<script>location.replace('loginadmin.html');</script>" ;
 			}
 			else
 			{
-		  echo "<script>location.replace('admin.php');</script>" ;
+		  	echo "<script>location.replace('admin.php');</script>" ;
 
 			}
 		}
 		else
 		{
-			echo "Erreur: pas de nom";
+			echo "<script>alert('Erreur: pas de nom')</script>";
+			echo "<script>location.replace('loginadmin.html');</script>" ;
 		}
 
 	}
 	else
 	{
-	echo "Erreur: base injoignable";
+		echo "<script>alert('Erreur: base injoignable')</script>";
+		echo "<script>location.replace('loginadmin.html');</script>" ;
 	}
-}
-else
-{
-	echo "pas de bouton pressé";
 }
