@@ -26,7 +26,7 @@
      					
      					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
      						
-     							//echo "enregistrement réussi<br>";
+     							echo "<script>alert('Enregistrement réussi');</script>";
 							    echo "<script>location.replace('admin.php');</script>"; //location.replace ('nom de la page de redirection ' )
 							} else {
 							    echo "erreur" ;
