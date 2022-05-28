@@ -15,7 +15,7 @@
         </div>
     <div id="nav" class="navigation">
             <ul>
-                <li> <a href="localhost:8080/inscriptionmedecin.html">  
+                <li> <a href="localhost:8080/inscriptionmedecin.php">  
                     
                  Ajout médecin   </a>         </li> 
 
