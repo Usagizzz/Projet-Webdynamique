@@ -75,8 +75,16 @@ fieldset{
 .type_carte ul li{
    
     list-style: none;
-    display: inline-block;
+    display: inline;
     padding: 25px;
+     float: left;
+}
+.type_carte ul li a: :before{
+}    
+
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
      float: left;
 }
 .type_carte ul li a{
@@ -106,6 +114,3 @@ fieldset{
     transition: 0.5s;
     opacity: 0;
 }
-.type_carte ul li a: :before{
-}    
-

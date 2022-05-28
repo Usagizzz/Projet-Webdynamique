@@ -17,14 +17,9 @@ $sql = ""; //variable pour les requetes
 //Si la BDD est trouvée
 if ($db_found) {
 
-switch ($choice) {
-		default:
-			$sql = "SELECT * FROM  `reservation`"; 
-			break;
-}
+
+		$sql = "SELECT * FROM reservation";
 echo "<h1> <center>Historique de vos réservations </center></h1>";
-echo "<p>Requête: " . $sql . "<br>";
-echo "Résultat:</p>";
 
 $result = mysqli_query($db_handle, $sql);
 
@@ -56,9 +51,34 @@ while ($data = mysqli_fetch_assoc($result)) {
 		echo "</tr>";
 }
 echo "</table>";
-} else {
-echo "<br>Base de donnée non trouvée";
 }
+ 
+
 //fermer la connexion
 mysqli_close($db_handle);
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="historiquerdv.css">
+	 <style type="text/css">
+	 	button{
+	 		outline: none;
+	 		border-radius: 5px;
+	 		border-color: white;
+	 		font-size: 1.5em;
+	 	}
+	 	button:hover{
+	 		border-bottom: 2px solid lightgreen;
+	 		background-color: palegreen;
+
+	 	}
+	 </style>
+</head>
+<body>
+	<center>
+	<button name="choix" value="1"> Annuler le prochain rendez-vous</button>
+	<a href="accueil.php"> <button name="choix" value="2"> Retourner à l'accueil</button> </a>
+</center>
+
+</body>	

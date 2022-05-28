@@ -56,7 +56,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(to left top, whitesmoke, lightblue);
+    background: url(accueilfond.png);
+    background-size: cover;
+  
 
     }
     header h1{
@@ -85,14 +87,14 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="rdv.php">Rendez-vous </a></li>
          <li class="active"><a href="about.php">A propos </a></li>
-          <li class="active"><a href="about.php">Recherche </a></li>
+          <li class="active"><a href="searchJ.php">Recherche </a></li>
 
-        <li><a href="specialiste.html">Tout parcourir</a></li>
-        <ul class="sousmenu">
+        <li><a href="categorie.php">Tout parcourir</a></li>
+       <!-- <ul class="sousmenu">
           <li><a href="medecinGeneralistePhp.php">Médecin généraliste</a></li>
            <li><a href="medecinSpecialistePhp.php">Médecin spécialite</a></li>
             <li><a href="service.php">Laboratoire</a></li>
-        </ul>
+        </ul>-->
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
@@ -110,4 +112,5 @@
     </div>
   </div>
 </nav>
+</body>
 

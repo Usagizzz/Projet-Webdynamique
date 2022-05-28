@@ -34,7 +34,8 @@
                          </select> 
                          <input type="time" name="heure" class="heure" placeholder="Heure de rendez-vous">
 
-                       <button name="soumettre" type="submit" class="soumettre"><b>Soumettre</b></button>
+                       <button name="soumettre" type="submit" class="soumettre"><b>Enregistrer</b></button>
+
                                 				        				
         			</form>	
   				</div> <!--fin formulaire rendez-vous-->	

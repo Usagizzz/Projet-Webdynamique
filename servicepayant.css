@@ -1,0 +1,24 @@
+.pricing_container{
+			width: 300px;
+			border-radius: 20px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+			font-family: sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: dimgray;
+			margin: 15px;
+}
+.pricing_header{
+	padding: 25px;
+	background: darkgreen;
+	color: whitesmoke;
+}
+.pricing_titre{
+	font-size: 1.5em;
+	font-weight: 400;
+}
+.pricing_titre,.resume{
+	margin: 0;
+	text-align: center;
+}
