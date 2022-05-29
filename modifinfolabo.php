@@ -6,6 +6,7 @@
              <meta charset="utf-8" />
     </head>
     <body>
+
 <center>
     <?php include('enteteadmin.php'); ?>
     <h1>Modifier les informations du laboratoire</h1><br>

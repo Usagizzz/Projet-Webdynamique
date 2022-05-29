@@ -6,6 +6,7 @@
              <meta charset="utf-8" />
     </head>
     <body>
+        <?php include('enteteadmin.php'); ?>
 <center>
 <?php
 

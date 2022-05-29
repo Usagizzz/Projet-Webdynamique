@@ -4,8 +4,15 @@
     		 <title>Inscrire médecin</title>
     		<link rel="stylesheet" type="text/css" href="logincss.css">
    		  <meta charset="utf-8" />
+   		  <style type="text/css">
+   		  	body{
+   		  		overflow: scroll;
+   		  	}
+
+   		  </style>
     </head>
     <body>
+    	<?php include('enteteadmin.php'); ?>
     	<center>
   
 	<div class="container" >

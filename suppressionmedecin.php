@@ -6,6 +6,7 @@
    		  <meta charset="utf-8" />
     </head>
     <body>
+        <?php include('enteteadmin.php'); ?>
     	<center>
             <div id="informations">
         <form enctype="multipart/form-data" action="medecin_suppr.php" method="post" class="text-center">
