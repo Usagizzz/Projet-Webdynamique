@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="accueilcss.css">
 <?php
 
 $database = 'projetweb';
@@ -28,13 +29,16 @@ $db_found = mysqli_select_db($db_handle, $database);
                 	echo "<th>" . "Prénom du patient" . "</th>";
                 	echo "</tr>";
                 	while ($data = mysqli_fetch_assoc($result)) {
-					echo "Nom du médecin: " . $data['docnom'] . '<br>';
- 					echo "Créneau pris:" . $data['heure'] . '<br>';
- 					echo "Date: " . $data['date'] . '<br>';
- 					echo "Lieu: " . $data['lieu'] . '<br>';
- 					echo "Nom du patient: " . $data['nompatient'] . '<br>';
-                	echo "Prénom du patient: " . $data['prenompatient'] . '<br>';
+                		echo "<tr>";
+					echo "<td>" . $data['docnom'] . '</td>';
+ 					echo "<td>" . $data['heure'] . '</td>';
+ 					echo "<td>" . $data['date'] . '</td>';
+ 					echo "<td>" . $data['lieu'] . '</td>';
+ 					echo "<td>" . $data['nompatient'] . '</td>';
+                			echo "<td>" . $data['prenompatient'] . '</td>';
+                	echo "</tr>";
                 	}
+                	echo "</table>";
                 	echo "<a href='admin.php'>Retour à l'admin</a>";
 
             	}
