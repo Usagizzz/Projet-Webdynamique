@@ -47,10 +47,11 @@
                     echo "<td>" . $data['Mail'] . "</td>";
                     echo "<td>" . $data['Telephone'] . "</td>";
                     $image = $data['Photo'];
-                    echo "<td>" . $image;
+                    echo "<td>" . "<img src='$image' height='120' width='100'>" . "</td>";
                     echo "<td>" . $data['CV'] . "</td>";
-
+                    echo "</tr>";
                     }
+                    echo "</table>";
                 }
             }
             }
