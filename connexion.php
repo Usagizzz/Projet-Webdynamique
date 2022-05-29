@@ -1,8 +1,5 @@
 <?php include('entete.php'); ?>
 
-
-
-	<!-- this is for donor registraton -->
 	<div class="main_content" style="background-color:#fff;">
 		<h3 class="text-center" style="background-color:#272327;color: #fff;">Votre compte</h3>
 		<div class="formstyles" style="background-color: #101011;color: #0d0623;">
@@ -18,33 +15,13 @@
 					
 					
 				</div>
-
-
-
-		
           
     </div><br><br><br><br>
 		
-	
-	
-	
 
-	
  <?php include('footer.php'); ?>
 
-
-	
-	</div><!--  containerFluid Ends -->
-
-
-
-
+	</div>
 	<script src="js/bootstrap.min.js"></script>
-
-
-
-
-
-	
 </body>
 </html>

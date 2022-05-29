@@ -2,7 +2,8 @@
 <html>
 <head>
 	 <link rel="stylesheet" href="historiquerdv.css">
-	 <style type="text/css">
+	 <title>Historique du dossier</title>
+	  <style type="text/css">
 	 	button{
 	 		outline: none;
 	 		border-radius: 5px;

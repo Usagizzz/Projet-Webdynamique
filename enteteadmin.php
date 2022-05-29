@@ -81,18 +81,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="accueil.php">Accueil</a>
+      <a class="navbar-brand" href="admin.php">Accueil</a>
     </div>
 
     <div class="menuderoulant" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="inscriptionmedecin.php">Ajout médecin</a></li>
-         <li class="active"><a href="suppressionmedecin.php">Suppression médecin </a></li>
-          <li class="active"><a href="infolabo.php">Infos du laboratoire </a></li>
-          <li class="active"><a href="Disponibilitemedecin.php">Vérification disponibilité  </a></li>
 
-        <li><a href="categorie.php">Tout parcourir</a></li>
-      
+         <li class="active"><a href="suppressionmedecin.php">Suppression médecin </a></li>
+
+         <li class="active"><a href="infolabo.php">Infos du laboratoire </a></li>
+        
+          <li class="active"><a href="Disponibilitemedecin.php">Vérification disponibilité  </a></li>
+  
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">

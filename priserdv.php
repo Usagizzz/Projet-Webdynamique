@@ -28,7 +28,7 @@
      					$sql = "INSERT INTO `reservation`(`docnom`, `docspecialite`, `nompatient`, `prenompatient`, `email`, `date`,`lieu`,`heure`) VALUES ('$docnom','$docspecialite','$nompatient','$prenompatient','$email','$date','$lieu','$heure');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
 
-     					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
+     					if ($conn->query($sql) == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
 							    echo "<script>location.replace('accueil.php');</script>"; //location.replace ('nom de la page où tu veux te rediriger ici pour moi c'est patient success qui me ramene vers un login )
 							} else {
 							    echo "<script>alert('There was an Error')<script>" . $sql . "<br>" . $conn->error;
