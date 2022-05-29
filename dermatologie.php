@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<?php include('entete.php'); ?>
 <h1> Dermatologie </h1>
 
 <!--
@@ -23,13 +24,13 @@
 <td colspan="2" align="center">
 	<h2>Dr. Boswel</h2>
 <img src="ms2.png" alt = "boswel" height = "120" width = "120" >
-<input type="submit" name="button13" value="Voir ses informations">
+<input type="submit" name="button13" value="Voir son CV">
 <a href="rdv.php"> <input type="button" name="button14" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button15" value="Contacter">
 
 <h2>Dr. Konate</h2>
 <img src="ms9.png" alt = "konate" height = "120" width = "120" >
-<input type="submit" name="button16" value="Voir ses informations">
+<input type="submit" name="button16" value="Voir son CV">
 <a href="rdv.php"> <input type="button" name="button17" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button18" value="Contacter">
 </td>

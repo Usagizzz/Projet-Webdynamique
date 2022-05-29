@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<?php include('entete.php'); ?>
 <h1> Gynécologie </h1>
 
 

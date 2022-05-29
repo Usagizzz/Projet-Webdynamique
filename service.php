@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<?php include('entete.php'); ?>
 <h1> Laboratoire de biologie médicale </h1>
 
 

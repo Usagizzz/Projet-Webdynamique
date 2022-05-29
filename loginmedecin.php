@@ -19,19 +19,19 @@
 <!-- fin ligne de separation de page-->
 		
 		<div id="informationspro">
-		
-		<tr> <td> <b>Adresse e-mail</b></td></tr>
+		<form action="medecinlogin" method="post">
+		<tr> <td> <b>Nom de famille</b></td></tr>
 
-		<tr> <td> <input type="text" placeholder="Ecrire votre adresse mail" class="inputbox" name="email"/> </td> </tr>
+		<tr> <td> <input type="text" placeholder="Ecrire votre nom de famille" class="inputbox" name="Nom"/> </td> </tr>
 
 
-	   <tr> <td> <b>Mot de passe:</b></td></tr>
+	   <tr> <td> <b>Adresse e-mail</b></td></tr>
 
-		<tr> <td>	<input type="password" placeholder="Choisir un mot de passe" class="inputbox" name="mdp" /> </td> </tr>
+		<tr> <td>	<input type="password" placeholder="Ecrire votre adresse e-mail" class="inputbox" name="Mail" /> </td> </tr>
 
 	</div>
 
-		<tr> <td align="center"><br /> <button name="submit" type="submit"> Se connecter </button> Se connecter 	</td> </tr>
+		<tr> <td align="center"><br /> <button name="submit" type="submit"> Se connecter </button> 	</td> </tr>
 
 		<tr> <td align="left"> <br /> <a href ="mdp.html"> <span class="forgetpassword">Mot de passe oublié ?</span></a> </td> </tr>
 		
@@ -62,30 +62,7 @@
 							
 										</div><!--div du container-->
 										</center>
-										<?php 
-					$_SESSION['doctor']="";
-							
-							include('config.php');
-							if(isset($_POST["submit"])){
-
-
-							$sql= "SELECT * FROM patient WHERE email= '" . $_POST["email"]."' AND mdp= '" . $_POST["mdp"]."'";
-
-							$result = $conn->query($sql);
-
-									if ($result->num_rows > 0) {
-											$_SESSION["email"]= $_POST["email"];
-											$_SESSION['doctor']= "yes";
-										    echo "<script>location.replace('patient/dashboard.php');</script>";
-											
-										} else {
-										    echo "<span style='color:red;'>Invalid username or password</span>";
-										}
-						$conn->close();		
-					}
-					
- 			?>
-									
+																	
 									  			 
 </body>
 </html>

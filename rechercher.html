@@ -8,6 +8,7 @@
 
 </head>
 <body>
+	<?php include('entete.php'); ?>
 <h2>Rechercher</h2>
 
 <h3>Vous pouvez effectuez une recherche concernant les médecins d'Omnes Santé</h3>

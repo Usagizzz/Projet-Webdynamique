@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<?php include('entete.php'); ?>
 <h2> Catégories médicales chez Omnes Santé </h2>
 
 

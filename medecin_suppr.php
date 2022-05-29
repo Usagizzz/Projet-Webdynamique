@@ -3,7 +3,7 @@
                 <form enctype="multipart/form-data" action="conf_medecin_suppr.php" method="post" class="text-center">
 <?php
                 $database = 'projetweb';
-                $db_handle = mysqli_connect('localhost:3307', 'root', '');
+                $db_handle = mysqli_connect('localhost', 'root', '');
                 $ID=$_POST['ID'];
 
             $db_found = mysqli_select_db($db_handle, $database);
@@ -47,11 +47,10 @@
                     echo "<td>" . $data['Mail'] . "</td>";
                     echo "<td>" . $data['Telephone'] . "</td>";
                     $image = $data['Photo'];
-                    echo "<td>" . "<img src='$image' height='120' width='100'>" . "</td>";
+                    echo "<td>" . $image;
                     echo "<td>" . $data['CV'] . "</td>";
-                    echo "</tr>";
+
                     }
-                    echo "</table>";
                 }
             }
             }

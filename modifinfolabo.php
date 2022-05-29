@@ -7,6 +7,7 @@
     </head>
     <body>
 <center>
+    <?php include('enteteadmin.php'); ?>
     <h1>Modifier les informations du laboratoire</h1><br>
     <div id="informations">
         <form enctype="multipart/form-data" action="update_labo.php" method="post" class="text-center">

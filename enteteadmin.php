@@ -93,6 +93,9 @@
          <li class="active"><a href="infolabo.php">Infos du laboratoire </a></li>
         
           <li class="active"><a href="Disponibilitemedecin.php">Vérification disponibilité  </a></li>
+
+          <li class="active"><a href="inscriptionadmin.php">Inscrire un administrateur</a></li>
+
   
       </ul>
       <form class="navbar-form navbar-right" role="search">

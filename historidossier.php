@@ -1,7 +1,7 @@
 
 	 <!--saisie -->
 
-
+<?php include('entete.php'); ?>
 				<?php
 						   echo "<meta charset=\"utf-8\">";
 							$dbname = 'projetweb';
@@ -54,7 +54,7 @@
 								}
 								echo "</table>";
 
-     					if ($result == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
+     					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
 							    echo "<script>location.replace('accueil.php');</script>"; //location.replace ('nom de la page où tu veux te rediriger ici pour moi c'est patient success qui me ramene vers un login )
 							} else {
 							    echo "<script>alert('Une erreur a été détectés ')<script>" . $sql . "<br>" . $conn->error;

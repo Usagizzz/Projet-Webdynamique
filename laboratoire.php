@@ -9,13 +9,14 @@
 </head>
 
 <body>
+    <?php include('entete.php'); ?>
 <h1> Laboratoire de biologie médicale </h1>
 
 <img src="lab.png" align = right height = "250" width = "350"  >
 
 <?php
 $database = 'projetweb';
-$db_handle = mysqli_connect('localhost:3307', 'root', '');
+$db_handle = mysqli_connect('localhost', 'root', '');
 $db_found = mysqli_select_db($db_handle, $database);
 $salle="";
 $email="";
