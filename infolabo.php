@@ -47,7 +47,7 @@ $db_found = mysqli_select_db($db_handle, $database);
 
 ?><br>
 <a href='admin.php'>Retour à l'admin</a><br>
-<a href='admin.php'>Modifier la table</a>
+<a href='modifinfolabo.php'>Modifier la table</a>
 
 </center>
 </body>
