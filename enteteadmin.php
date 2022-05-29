@@ -88,7 +88,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="inscriptionmedecin.php">Ajout médecin</a></li>
          <li class="active"><a href="suppressionmedecin.php">Suppression médecin </a></li>
-          <li class="active"><a href="login.html">Fichiers XML </a></li>
+          <li class="active"><a href="infolabo.php">Infos du laboratoire </a></li>
           <li class="active"><a href="Disponibilitemedecin.php">Vérification disponibilité  </a></li>
 
         <li><a href="categorie.php">Tout parcourir</a></li>
