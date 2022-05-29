@@ -23,9 +23,9 @@
                    
                 Suppression médecin   </a></li> 
 
-                   <li> <a href="login.html"> 
+                   <li> <a href="infolabo.php"> 
 
-                Fichiers xml   </a></li> 
+                Infos du laboratoire   </a></li> 
           
                   <li> <a href="Disponibilitemedecin.php"> 
 
