@@ -36,7 +36,7 @@ $db_found = mysqli_select_db($db_handle, $database);
  					echo "<td>" . $data['lieu'] . '</td>';
  					echo "<td>" . $data['nompatient'] . '</td>';
                 			echo "<td>" . $data['prenompatient'] . '</td>';
-                	echo "</tr>";
+                		echo "</tr>";
                 	}
                 	echo "</table>";
                 	echo "<a href='admin.php'>Retour à l'admin</a>";
