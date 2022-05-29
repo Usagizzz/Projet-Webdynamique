@@ -13,19 +13,19 @@
 
         <div id=appointment>
         	<div class="contenu">
-        		<div class="formrdv">
-        			<h3>Prendre un rendez-vous</h3>
-        			<form action="priserdv.php" method="post">
+                        <div class="formrdv">
+                                <h3>Prendre un rendez-vous</h3>
+                                <form action="priserdv.php" method="post">
                         <input type="text" name="docnom" placeholder="Nom du médecin">
                         <input type="text" name="docspecialite" placeholder="Spécialité du médecin">
-        				<span> <input type="text" name="nompatient" placeholder="Nom de famille"> </span>
+                                        <span> <input type="text" name="nompatient" placeholder="Nom de famille"> </span>
 
-        				<span> <input type="text" class="nom" name="prenompatient" placeholder="Prénom"> </span>
-        				<input type="text" name="email" class="mail" placeholder="Adresse e-mail">
+                                        <span> <input type="text" class="nom" name="prenompatient" placeholder="Prénom"> </span>
+                                        <input type="text" name="email" class="mail" placeholder="Adresse e-mail">
                         <input type="date" name="date" class="date" placeholder="Date de rendez-vous">
 
-        				    				
-        			    <select name="lieu" class="form-control"> 
+                                                                        
+                                    <select name="lieu" class="form-control"> 
                                 <option selected disabled>--Choisissez un lieu--</option>
                                 <option>Paris</option>
                                 <option>Lyon</option>
@@ -36,13 +36,14 @@
 
                        <button name="soumettre" type="submit" class="soumettre"><b>Enregistrer</b></button>
 
-                                				        				
-        			</form>	
-  				</div> <!--fin formulaire rendez-vous-->	
-  				<div class="rdvimage">
-  					<img src="rdvfond.png" name="fond" height="440" width="440">
-  				</div>
+                                                                                                        
+                                </form> 
+                                </div> <!--fin formulaire rendez-vous-->        
+                                <div class="rdvimage">
+                                        <img src="rdvfond.png" name="fond" height="440" width="440">
+                                </div>
             </div><!--fin contenu-->
+
 		</div>
 				 <?php include('footer.php'); ?>					
 									  			 

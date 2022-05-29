@@ -24,7 +24,7 @@
 	<h2>Dr. Hamraoui</h2>
 <img src="ms10.png" alt = "hamraoui" height = "120" width = "120" >
 <input type="submit" name="button1" value="Voir ses informations">
-<input type="submit" name="button2" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button2" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button3" value="Contacter">
 </td>
 </tr>

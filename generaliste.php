@@ -21,31 +21,34 @@
 	<h2>Dr. Dubois</h2>
 <img src="mg1.png" alt = "boswel" height = "120" width = "120" >
 <input type="submit" name="button1" value="Voir ses informations">
-<a href="rdv.php"> <input type="submit" name="button2" value="Prendre rendez-vous"> </a>
+<a href="rdv.php"> <input type="button" name="button2" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button3" value="Contacter">
+<a href="contact.php"> <input type="button" name="contact" value="Passer un appel vidéo"></a>
+
 
 <h2>Dr. Delahaye</h2>
 <img src="none.png" alt = "konate" height = "120" width = "120" >
 <input type="submit" name="button4" value="Voir ses informations">
-<input type="submit" name="button5" value="Prendre rendez-vous">
+<a href="rdv.php"><input type="button" name="button5" value="Prendre rendez-vous"></a>
 <input type="submit" name="button6" value="Contacter">
+<a href="contact.php"> <input type="button" name="contact" value="Passer un appel vidéo"></a>
 
 	<h2>Dr. Calderon</h2>
 <img src="mg2.png" alt = "boswel" height = "120" width = "120" >
 <input type="submit" name="button7" value="Voir ses informations">
-<input type="submit" name="button8" value="Prendre rendez-vous">
+<a href="rdv.php"><input type="button" name="button8" value="Prendre rendez-vous"></a>
 <input type="submit" name="button9" value="Contacter">
 
 <h2>Dr. Baskaran</h2>
 <img src="mg5.png" alt = "konate" height = "120" width = "120" >
 <input type="submit" name="button10" value="Voir ses informations">
-<input type="submit" name="button11" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button11" value="Prendre rendez-vous"></a>
 <input type="submit" name="button12" value="Contacter">
 
 	<h2>Dr. Cisse</h2>
 <img src="mg3.png" alt = "boswel" height = "120" width = "120" >
 <input type="submit" name="button13" value="Voir ses informations">
-<input type="submit" name="button14" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button14" value="Prendre rendez-vous"></a>
 <input type="submit" name="button15" value="Contacter">
 
 

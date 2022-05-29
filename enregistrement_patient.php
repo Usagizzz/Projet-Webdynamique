@@ -6,7 +6,7 @@
 		<h3 class="text-center" style="background-color:#272327;color: #fff;">S'enregistrer comme nouveau patient</h3>
 
 		<div class="formstyle" style="float: right;padding:25px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color:#f3f3f8;color:#141313;">
-		<form enctype="multipart/form-data" action="patient_register.php" method="post" class="text-center">
+		<form action="patient_register.php" method="post" class="text-center">
 			 <div class="col-md-12">
 				  
 			 		<label>
@@ -32,7 +32,7 @@
 					</label><br><br>
 					
 					
-					<button name="submit" type="submit" style="width: 95px;border-radius: 5px;">S'enregistrer</button> <br>
+					<button name="enregistrer" type="submit" style="width: 95px;border-radius: 5px;">S'enregistrer</button> <br>
 				
 			</div>	<!-- col-md-12 -->
 

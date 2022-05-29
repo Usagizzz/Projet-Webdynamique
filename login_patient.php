@@ -27,7 +27,7 @@
 										    echo "<script>location.replace('accueil.php');</script>";
 												
 										} else {
-										    echo "<span style='color:red;'>Invalid username or password</span>";
+										    echo "<span style='color:red;'>Identifiant et/ou mot de passe invalide</span>";
 										}
 						$conn->close();		
 					}

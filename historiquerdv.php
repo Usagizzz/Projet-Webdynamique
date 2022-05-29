@@ -77,7 +77,6 @@ mysqli_close($db_handle);
 </head>
 <body>
 	<center>
-	<button name="choix" value="1"> Annuler le prochain rendez-vous</button>
 	<a href="accueil.php"> <button name="choix" value="2"> Retourner à l'accueil</button> </a>
 </center>
 

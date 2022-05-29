@@ -93,11 +93,13 @@
 header h1{
     font-size: 90px;
 }
+
   </style>
 </head>
 <?php include('entete.php'); ?>
 
 <body>
+
 
 <div class="container text-center">    
   <div class="row">
@@ -108,9 +110,9 @@ header h1{
       <div class="well">
         <p><a href="#">Notre équipe</a></p>
         <p>
-          <span class="label label-default">Justine BOUDOUX</span>
+          <span class="label label-default">Thibaud PERRET</span>
           <span class="label label-primary">Minh-Bao POTIER</span>
-          <span class="label label-success">Thibaud PERRET</span>
+          <span class="label label-success">Justine BOUDOUX</span>
           <span class="label label-info">Clarence MAGNE</span>
         </p>
       </div>
@@ -132,29 +134,41 @@ header h1{
     </div>
     <div class="col-sm-7">
     
+     
         <!--Interactions clients-->
     <div class="gestionrdv">
+
             <table>
             <tr>
         
-            <td> <h3>Prendre un rendez-vous</h3>
+            <td> <h2>Prendre un rendez-vous</h2>
             <a href="rdv.php"> <button type="button"> <img src="rdvfond.png" name="fondrdv" alt="image_sympa" height="200" width="200"></button> </a> </td>
         
       
-           <td> <h3>Historique des consultations</h3>
+           <td> <h2>Historique général des consultations </h2>
             <a href="historiquerdv.php"> <button type="button"> <img src="historique.png" height="200" width="200"> </button> </a> </td>
 
-             <td> <h3>Consulter les services payants</h3>
+             <td> <h2>Les services payants</h2>
             <a href="servicepayant.php"> <button type="button"> <img src="paiement.png" height="200" width="200"> </button> </a> </td>
+
+            <td> <h2>Mon dossier</h2>
+            <a href="dossierhistori.php"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="button"> <img src="mondossier.png" height="195" width="200"> </button> </a> </td>
+
           </tr>
+
+
       </table>
+
    
     </div> <!--fin gestionrdv-->
-    
-     </div>
- </div>
+           
+     </div><!--fin col-sm-7-->
+
+ </div><!--fin row-->
+
 
 </div>
+  
 
      <footer class="container-fluid text-center">
               <p><em>Nous contacter :</em></p>

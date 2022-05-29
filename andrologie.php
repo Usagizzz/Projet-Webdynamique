@@ -24,7 +24,7 @@
 	<h2>Dr. Wang</h2>
 <img src="ms4.png" alt = "wang" height = "120" width = "120" >
 <input type="submit" name="button4" value="Voir ses informations">
-<input type="submit" name="button5" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button5" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button6" value="Contacter">
 
 

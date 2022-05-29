@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		table{
-			display: inline-block;
+			display: flex;
+			flex-direction: column;
+			border-radius: 20px;
 		}
 		.pricing_container{
 			width: 300px;
@@ -65,6 +67,7 @@
 	<section class="pricing_container"> 
 		<table>
 			<tr>
+				<td>
 		<div class="pricing_header">
 		
 	    	<h1 class="pricing_titre"> Basic </h1>
@@ -80,7 +83,11 @@
 			<a href="paiement_login.php" class="read">Procéder au paiement </a>
 
 		</div>
+	</td>
+	</tr>
 
+		<tr>
+			<td>
 		<div class="pricing_header">
 		
 	    	<h1 class="pricing_titre"> Pro </h1>
@@ -96,7 +103,10 @@
 			<a href="paiement_login.php" class="read">Procéder au paiement </a>
 
 		</div>
-
+	</td>	
+	</tr>
+	<tr>
+		<td>
 		<div class="pricing_header">
 		
 	    	<h1 class="pricing_titre"> Entreprise </h1>
@@ -112,6 +122,7 @@
 			<a href="paiement_login.php" class="read">Procéder au paiement</a>
 
 		</div>
+	</td>
 	</tr>
 	</table>
 

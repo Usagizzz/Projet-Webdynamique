@@ -24,7 +24,7 @@
 									if ($result->num_rows > 0) {
 											$_SESSION["email"]= $_POST["email"];
 											$_SESSION['patient']= "yes";
-										    echo "<script>location.replace('paiement.php');</script>";
+										    echo "<script>location.replace('money.php');</script>";
 												
 										} else {
 										    echo "<span style='color:red;'>Invalid username or password</span>";

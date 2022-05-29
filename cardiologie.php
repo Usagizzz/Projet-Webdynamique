@@ -24,13 +24,13 @@
 	<h2>Dr. Garnier</h2>
 <img src="ms1.png" alt = "garnier" height = "120" width = "120" >
 <input type="submit" name="button7" value="Voir ses informations">
-<input type="submit" name="button8" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button8" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button9" value="Contacter">
 
 <h2>Dr. Cohen</h2>
 <img src="ms3.png" alt = "cohen" height = "120" width = "120" >
 <input type="submit" name="button10" value="Voir ses informations">
-<input type="submit" name="button11" value="Prendre rendez-vous">
+<a href="rdv.php"> <input type="button" name="button11" value="Prendre rendez-vous"> </a>
 <input type="submit" name="button12" value="Contacter">
 </td>
 </tr>

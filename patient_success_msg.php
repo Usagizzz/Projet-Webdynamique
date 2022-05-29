@@ -1,10 +1,6 @@
 <?php include('entete.php'); ?>
 
 
-
-
-
-	<!-- this is for donor registraton -->
 	<div class="login" style="background-color:#fff;">
 		<h1 class="text-center" style="background-color:#272327;color: #fff;"> Bienvenu(e) sur OMNES SANTE</h1>
 		 		<p class="text-center">Votre inscription a bien été enregistré</p>
@@ -14,11 +10,9 @@
 						Adresse mail: <input type="email" name="email"  placeholder="Saisir votre identifiant" required>
 					</label><br><br>
 					<label>
-						Mot de passe: <input type="password" name="password"  placeholder=" Saisir votre mot de passe" required>
+						Mot de passe: <input type="password" name="mdp"  placeholder=" Saisir votre mot de passe" required>
 					</label><br><br>
 					<button name="submit" type="submit" style="margin-left:36px;width: 85px;border-radius: 3px;">Se connecter</button> <br>
-
-					<!-- Not a member?<a href="donor_seeker_regi.php" title="create a account" target="" style="color:black;">&nbsp;Sign Up</a> <br> -->
 
 
 					<!-- login validation -->
@@ -38,7 +32,7 @@
 										    echo "<script>location.replace('accueil.php');</script>";
 												// echo "u are supposed to redirect to ur profile";
 										} else {
-										    echo "<span style='color:red;'>Please, check  username and password</span>";
+										    echo "<span style='color:red;'>Identifiant ou mot de passe incorrect</span>";
 										}
 						$conn->close();		
 					}
