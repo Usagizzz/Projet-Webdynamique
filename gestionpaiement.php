@@ -34,7 +34,7 @@
      					$sql = "INSERT INTO `paiement`(`nom`, `prenom`, `al1`, `al2`, `ville`, `codepostal`,`pays`,`telephone`,`cartev`,`typecarte`,`numcarte`,`nomcarte`,`expiration`,`code`) VALUES ('$nom','$prenom','$al1','$al2','$ville','$codepostal','$pays','$telephone','$cartev','$typecarte','$numcarte','$nomcarte','$expiration','$code');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
 
-     					if ($conn->query($sql) == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
+     					if ($result == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
      						echo"<script>alert('Informations bien enregistrées vous recevrez un mail de validation de la transaction')</script>";
 							    echo "<script>location.replace('accueil.php');</script>"; //location.replace ('nom de la page où tu veux te rediriger ici pour moi c'est patient success qui me ramene vers un login )
 							} else {

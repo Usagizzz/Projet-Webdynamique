@@ -26,7 +26,7 @@
      					$sql = "INSERT INTO `patient`(`nom`, `prenom`, `cartev`, `adresse`, `email`, `mdp`) VALUES ('$nom','$prenom','$cartev','$adresse','$email','$mdp');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
 
-     					if ($conn->query($sql) == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
+     					if ($result == TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
 							    echo "<script>location.replace('patient_success_msg.php');</script>"; //location.replace ('nom de la page où tu veux te rediriger ici pour moi c'est patient success qui me ramene vers un login )
 							} else {
 							    echo "<script>alert('Il y a eu une erreur')<script>" . $sql . "<br>" . $conn->error;

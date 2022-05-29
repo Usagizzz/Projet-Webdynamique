@@ -25,7 +25,7 @@
      					$sql = "INSERT INTO `medecin`(nom, prenom, specialite,salle,mail,telephone,photo,cv ) VALUES ('$nom','$prenom','$specialite','$salle','$email','$telephone','$photo','$cv');"; //tu fais ta requete
      					$result = mysqli_query($conn, $sql);
      					
-     					if ($conn->query($sql) === TRUE) { //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
+     					if ($result == TRUE){ //concaténation du bouléen pour vérifier que ta requete a bien été effectué 
      						
      							//echo "enregistrement réussi<br>";
      						echo "<script>alert('Enregistrement réussi');</script>";
